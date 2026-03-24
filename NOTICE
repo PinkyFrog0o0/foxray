@@ -1,0 +1,24 @@
+FoxRay
+Copyright 2026 Ray
+
+This project is a derivative work based on gmn-api by hirsaeki,
+gmn by Tomohiro Owada, and Gemini CLI by Google LLC.
+https://github.com/hirsaeki/gmn-api
+https://github.com/tomohiro-owada/gmn
+https://github.com/google-gemini/gemini-cli
+
+Original work Copyright 2025 Google LLC
+Licensed under the Apache License, Version 2.0
+
+================================================================================
+
+This derivative work includes the following modifications from the original:
+
+1. Rebranded the repository, module path, and binary as FoxRay
+2. Added FOXRAY_* environment variables with GMN_* compatibility fallbacks
+3. Added ~/.foxray/.env support while keeping ~/.gmn/.env compatibility
+4. Switched cached state to foxray_state.json with legacy gmn_state.json fallback
+5. Retained ~/.gemini/settings.json compatibility for OAuth and MCP settings
+
+The authentication tokens and configuration files from the original Gemini CLI
+(located in ~/.gemini/) are reused by this tool for convenience.
